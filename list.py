@@ -198,3 +198,216 @@ print("\nMy friend’s favorite pizzas are:")
 for pizza in friend_pizzas:
     print(pizza)
 '''
+'''
+#checking whether a value is not in a list
+banned_user = ['andrew','carolina','david']
+user = 'marie'
+if user not in banned_user:
+    print(f"{user.title()}, you can post a response if you wish")
+    '''
+#if else statement
+'''
+cars = ["audi","bmw","subaru","toyota"]
+for car in cars:
+    if car == "bmw":
+        print(car.upper())
+    else:
+        print(car.title())
+'''
+'''
+age = 17
+if age >= 18:
+    print("you are old enough to vote!")
+    print("have you register to vote yet ?")
+else:
+    print("sorry, you are too young to vote.")
+    print("please register to vote as soon as you turn 18!")
+'''
+#checking inequality
+'''
+requested_topping = 'mushrooms'
+if requested_topping != 'anchovies':
+    print("Hold the anchovies!")
+'''
+
+# if-elif-else statement
+'''
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price =25
+else:
+    price = 40
+print(f"your admission cost is ${price}.")
+'''
+#multiple elif block
+'''
+age = 45
+if age < 4:
+    price = 0
+elif age < 18:
+    price =25
+elif age < 50:
+    price = 40
+else:
+    price = 20
+print(f"your admission cost is ${price}.")
+'''
+'''
+items = ['mushrooms','extra cheese']
+if 'mushroom' in items:
+    print("adding mushroom.")
+elif 'pepperoni' in items:
+    print("adding pepperoni")
+elif 'extra cheese' in items:
+    print("adding extra cheese")
+print("\n finished making your pizza")
+'''
+#if statement
+'''
+alien_color = 'green'
+if alien_color == 'green':
+    print("player just earned 5 points")
+    '''
+#if else statement
+'''
+alien_color = 'yellow'
+if alien_color == 'green':
+    print("player just earned 5 points")
+else:
+    print("player just earn 10 points")
+'''
+#if-elif-else
+'''
+alien_color = 'yellow'
+if alien_color == 'green':
+    print("player just earned 5 points")
+elif alien_color == 'yellow':
+    print("player just earn 10 points")
+else:
+    print("player earned 15 points")
+'''
+#if-elif-else
+'''
+age = 1
+if age < 2:
+    print("the person is a baby")
+elif age < 4:
+    print("the person is a toddler")
+elif age < 13:
+    print("the person is a kid")
+elif age < 20:
+    print("the person is a teenager")
+elif age < 65:
+    print("the person is adult")
+else:
+    print("the person is elder")
+'''
+'''
+favorite_fruits = ['orange','kiwi','banana']
+if 'mango' in favorite_fruits:
+    print("you really like mango")
+if 'orange' in favorite_fruits:
+    print("you really like orange")
+if 'kiwi' in favorite_fruits:
+    print("you really like kiwi")
+if 'cherry' in favorite_fruits:
+    print("you really like cherry")
+if 'banana' in favorite_fruits:
+    print("you really like banana")
+'''
+'''
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    print(f"Adding {requested_topping}.")
+print("\nFinished making your pizza!")
+'''
+'''
+requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
+for requested_topping in requested_toppings:
+    if requested_topping == 'green peppers':
+        print("sorry,we are out of green peppers rigth now.")
+    else:
+        print(f"Adding {requested_topping}.")
+print("\nFinished making your pizza!")
+'''
+#using multiple lists
+'''
+available_toppings = ['mushrooms','olives',';green peppers','pepperoni','pineapple','extra cheese']
+requested_toppings = ['mushrooms','french fries','extra cheese']
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print(f"adding {requested_topping}.")
+    else:
+        print("sorry, we don't have {requested_topping}.")
+print("\n finished making your pizza!")
+'''
+'''
+username = ['admin','pranali','tanu','shruti']
+for user in username:
+    if user == 'admin':
+        print("hello admin,would you like to see a status report?")
+    else:
+        print(f"hello {user}, thank you for logging in again")
+'''
+
+# No Users: Add an if test to hello_admin.py to make sure the list of users is 
+#not empty.
+#•	If the list is empty, print the message We need to find some users!
+#•	Remove all of the usernames from your list, and make sure the correct 3
+#message is printed.
+'''
+username = ['admin','pranali','tanu','shruti']
+if username:
+    for user in username:
+        if user == 'admin':
+            print("hello admin,would you like to see a status report")
+        else:
+            print(f"hello {user},thank you for logging in again")
+else:
+    print("we need to find some user!")
+'''
+'''
+current_username = ["admin","pranali","tanu","shruti"]
+new_usernames = ["admin","sarthak","abhi","PRANALI"]
+for new_username in new_usernames:
+    if new_username in current_username:
+        print("the person will need to enter a new username")
+    else:
+        print(f"the {new_username} is availlable")
+'''
+'''
+current_users = ["admin","pranali","tanu","shruti"]
+new_users = ["admin","sarthak","abhi","PRANALI"]
+current_users_lower = [user.lower() for user in current_users]
+
+for new_user in new_users:
+    if new_user.lower() in current_users_lower:
+        print(f"Sorry, the username '{new_user}' is already taken. Please enter a new username.")
+    else:
+        print(f"The username '{new_user}' is available!")
+'''
+'''
+numbers = [1,2,3,4,5,6,7,8,9]
+for num in numbers:
+    if num == 1:
+        print("1st")
+    elif num== 2:
+        print("2nd")
+    elif num == 3:
+        print("3rd")
+    else:
+        print(f"{num}th")
+'''
+'''
+for num in range(1,100,1):
+     if num == 1:
+        print("1st")
+     elif num== 2:
+        print("2nd")
+     elif num == 3:
+        print("3rd")
+     else:
+        print(f"{num}th")
+'''
